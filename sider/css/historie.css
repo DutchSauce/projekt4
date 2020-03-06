@@ -1,0 +1,176 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(/billeder/baggrund.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  position: fixed;
+  width: 100%
+
+}
+
+nav ul{
+   display: flex;
+   justify-content: space-around;
+   font-family: 'Josefin Sans', sans-serif;
+   width: 30%;
+}
+
+
+ nav ul li{
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+ nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+ nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 1);
+   width: 150px;
+   height: 110px;
+   padding: 10px;
+   margin: -10px;
+   margin-top: 10px;
+   border-radius: 0px 0px 5px 5px;
+ }
+
+ nav ul li:hover ul {
+   display: block;
+
+ }
+
+ nav ul li ul li {
+
+   padding: 7px;
+
+ }
+
+ nav ul li ul li a {
+   padding: 8px 14px;
+ }
+
+ nav ul li ul li:hover {
+   background-color: #66432f
+ }
+
+
+.headercontainer {
+  font-family: 'Josefin sans thin', sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.headercontainer h2 {
+  font-size: 7vw;
+  position: absolute;
+  top: 130px;
+}
+
+.indledning { grid-area: indledning;height: 50vh; margin: 0vw 10vw 15vw 10vw;}
+.billede1 { grid-area: billede1; background-size: cover; background-image: url(/billeder/historiefarver.jpg);}
+.tekst1 { grid-area: tekst1;}
+.billede2 { grid-area: billede2; background-size: cover; background-image: url(/billeder/kaempeglasfarvercom.jpg); }
+.tekst2 { grid-area: tekst2;}
+.billede3 { grid-area: billede3; background-size: cover; background-image: url(/billeder/vaerkstedfarver.jpg);}
+.tekst3 { grid-area: tekst3; }
+.billede4 { grid-area: billede4; background-size: cover; background-image: url(/billeder/arbejdarbejdfarvercom.jpg);}
+.tekst4 { grid-area: tekst4; }
+
+.grid-historiecontainer {
+  display: grid;
+  grid-template-areas:
+  'indledning indledning'
+  'tekst1 billede1'
+  'billede2 tekst2'
+  'tekst3 billede3'
+  'billede4 tekst4'
+  ;
+  grid-gap: 0px;
+  padding: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 4vh;
+}
+
+.grid-historiecontainer > div {
+  text-align: center;
+  padding: 200px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+footer{
+  bottom: 0px;
+  color: #fff;
+  width: 100%;
+  height: 150px;
+  background: #111315 0% 0% no-repeat padding-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3vh;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+}
+
+.footer-logo{
+  width: 5%;
+  float: left;
+  margin-right: 10vw;
+}
+
+.eu-logo{
+  width: 15%;
+}
+
+.footer-tekst{
+  list-style: none;
+  line-height: 23px;
+  color: #fff;
+}
+
+.mail{
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
+.footer-overskrift{
+  padding-bottom: 1vh;
+}
