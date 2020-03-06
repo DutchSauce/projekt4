@@ -1,0 +1,289 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+html {
+  background: url(/billeder/baggrund.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  font-family: 'Josefin sans', sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  position: fixed;
+  width: 100%
+
+}
+
+nav ul{
+   display: flex;
+   justify-content: space-around;
+   font-family: 'Josefin Sans', sans-serif;
+   width: 30%;
+}
+
+
+ nav ul li{
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+ nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+ nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 1);
+   width: 150px;
+   height: 110px;
+   padding: 10px;
+   margin: -10px;
+   margin-top: 10px;
+   border-radius: 0px 0px 5px 5px;
+ }
+
+ nav ul li:hover ul {
+   display: block;
+
+ }
+
+ nav ul li ul li {
+
+   padding: 7px;
+
+ }
+
+ nav ul li ul li a {
+   padding: 8px 14px;
+ }
+
+ nav ul li ul li:hover {
+   background-color: #66432f
+ }
+
+
+ /* Slideshow container */
+ .slideshow-container {
+   max-width: 100%;
+   height: auto;
+   overflow: hidden;
+   position: relative;
+   background-size: cover;
+   background-position: center;
+ }
+
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: black;
+   font-weight: bold;
+   font-size: 35px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+
+ /* Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+
+ @-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
+ /* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+   .prev, .next,.text {font-size: 11px}
+ }
+
+ .silder-mere{
+  position: absolute;
+  top: 65%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #e94f2a;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+ }
+
+ .forside-produkt{
+   position: relative;
+   height: 1080px;
+ }
+
+.odense-born{
+  position: relative;
+  height: 1080px;
+  border: 10px;
+}
+
+.img-svend{
+  position: absolute;
+  height: 1080px;
+  width: 50%;
+
+}
+
+.booking{
+  position: relative;
+  height: 1080px;
+}
+
+.foredrag{
+  position: absolute;
+  height: 1080px;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.produkt-h3{
+  top: 35%;
+  position: absolute;
+  margin-right: 61%;
+  margin-left: 15%;
+}
+
+.odense-h3{
+  top: 35%;
+  position: absolute;
+  margin-left: 63%;
+  margin-right: 10%;
+}
+
+.book-h3{
+  top: 35%;
+  position: absolute;
+  margin-right: 61%;
+  margin-left: 15%;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Josefin Sans semibold', sans-serif;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Josefin Sans semibold', sans-serif;
+  letter-spacing: 0;
+  color: #000000;
+}
+
+p{
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 20px
+}
+
+button{
+  padding: 0.3vw;
+  cursor: pointer;
+  margin-left: 43%;
+  letter-spacing: 0.5px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  background: #E94F2A 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+
+
+footer{
+  bottom: 0px;
+  color: #fff;
+  width: 100%;
+  height: 150px;
+  background: #111315 0% 0% no-repeat padding-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3vh;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+}
+
+.footer-logo{
+  width: 5%;
+  float: left;
+  margin-right: 10vw;
+}
+
+.eu-logo{
+  width: 15%;
+}
+
+.footer-tekst{
+  list-style: none;
+  line-height: 23px;
+  color: #fff;
+}
+
+.mail{
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
+.footer-overskrift{
+  padding-bottom: 1vh;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+  <title>Odense Glasværk - "I Odense er glas født"</title>
+</head>
+
+<body>
+  <nav>
+    <div class="Logo">
+      <a href="forside.html"><img width="150" src="/billeder/logo-glsvaerk-white-text.png" alt="Logo til Odense Glasværk"></a>
+    </div>
+    <ul>
+      <li><a href="forside.html">HJEM</a></li>
+      <li><a href="/sider/shop-rain.html">PRODUKTER</a></li>
+      <li><a href="/sider/bestilling.html">BESØG</a></li>
+      <li class="om-os"><a href="/sider/om-os.html">OM OS</a>
+        <ul>
+          <li><a href="/sider/om-os.html">Om os</a></li>
+          <li><a href="/sider/historie.html">Historie</a></li>
+          <li><a href="/sider/kontakt.html">Kontakt</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </nav>
+  <header>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="billeder/rodpotte-2.png" alt="En rød vase med en blomst i">
+        <button onclick="location.href='/sider/shop-red.html'" class="silder-mere">Se mere...</button>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="billeder/rainbow-4.png" alt="En vase med forskellige spirale striper">
+        <button onclick="location.href='/sider/shop-rain.html'" class="silder-mere">Se mere...</button>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="billeder/blueocean-4.png" alt="3 blå vaser">
+        <button onclick="location.href='/sider/shop-blue.html'" class="silder-mere">Se mere...</button>
+      </div>
+
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+  </header>
+  <main>
+    <article class="forside-produkt">
+      <div class="produkt-h3">
+        <h1>Produkter</h1>
+        <p>Se Odense Glasværks stor sortiment af forskellige varer.</p>
+        <button onclick="location.href='/sider/produkter.html'">SE MERE</button>
+      </div>
+      <img class="foredrag" src="/billeder/produkt-vase-forside.png" alt="Her ses mennesker der sidder ned til et foredrag.">
+    </article>
+    <article class="odense-born">
+      <div class="odense-h3">
+        <h3>I Odense er glas født</h3>
+        <p>“S. Brummer var en mand med visioner, og hans vision var at starte et glaspusteri i Odense.
+          Derfor samlede han alle byens spidser til et møde.
+          Alle kunne se fordelen ved at give Odense et nyt og unikt særpræg med glaspusteriet.
+          Og de aftalte at støtte det nye foretagende med 60.000 Rigsdaler.”  <br><br>Læs mere om glasværkerets historie her.</p>
+        <button onclick="location.href='/sider/historie.html'">LÆS MERE</button>
+      </div>
+      <img class="img-svend" src="/billeder/historie-grey-forside.jpg" alt="Her er et billede, hvor der ses en glasmeger der er ved at dreje varmt glas.">
+    </article>
+    <article class="booking">
+      <div class="book-h3">
+        <h3>Rundvisning & Foredrag</h3>
+        <p>Kom & oplev kunsten bag bøhmiske metoder med en rundvisning og høre fortællinger fra fortiden.</p>
+        <button onclick="location.href='/sider/bestilling.html'">BOOK HER</button>
+      </div>
+      <img class="foredrag" src="/billeder/besoeg2.png" alt="Her ses mennesker der sidder ned til et foredrag.">
+    </article>
+  </main>
+  <footer>
+    <div class="footer-flex">
+      <img class="footer-logo" src="/billeder/og-logo-glas-moerk.png" alt="Odense glasværks logo som er rund med en lyseblå farve samt 3 farver i midten med farvene gul
+      orange og hvid">
+      <ul class="footer-tekst">
+        <li class="footer-overskrift">Åbningstider:</li>
+        <li>Mandag & Fredag: 10-15</li>
+        <li>Tirsdag-Torsdag: 10-17</li>
+        <li>Lørdag & Søndag: 10-15</li>
+      </ul>
+      <ul class="footer-tekst">
+        <li class="footer-overskrift">Kontakt information:</li>
+        <li>Havnegade 13, 5000 Odense C</li>
+        <li class="mail"><a href="mailto:info@odenseglasvaerk.dk"></a>info@odenseglasvaerk.dk</li>
+        <li>Tlf.: +45 34 12 01 92</li>
+      </ul>
+      <img class="eu-logo" src="/billeder/eusocialfond.png" alt="EUs socialfond logo">
+    </div>
+  </footer>
+</body>
+
+</html>
