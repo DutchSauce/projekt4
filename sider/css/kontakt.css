@@ -1,0 +1,161 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  background: url(/billeder/baggrund.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  position: fixed;
+  width: 100%
+
+}
+
+nav ul{
+   display: flex;
+   justify-content: space-around;
+   font-family: 'Josefin Sans', sans-serif;
+   width: 30%;
+}
+
+
+ nav ul li{
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+nav ul li:hover{
+  background-color: rgba(0, 0, 0, 1);
+}
+
+ nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+ nav ul li ul {
+   display: none;
+   position: absolute;
+   background-color: rgba(0, 0, 0, 1);
+   width: 150px;
+   height: 110px;
+   padding: 10px;
+   margin: -10px;
+   margin-top: 10px;
+   border-radius: 0px 0px 5px 5px;
+ }
+
+ nav ul li:hover ul {
+   display: block;
+
+ }
+
+ nav ul li ul li {
+
+   padding: 7px;
+
+ }
+
+ nav ul li ul li a {
+   padding: 8px 14px;
+ }
+
+ nav ul li ul li:hover {
+   background-color: #66432f
+ }
+
+.side-header{
+width: 100%;
+height: 412px;
+background: transparent url('/billeder/glass-factory-dark.jpg') 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+opacity: 1;
+}
+.headercontainer {
+   font-family: 'Josefin sans thin', sans-serif;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+ }
+
+ .headercontainer h2 {
+  font-size: 7vw;
+  position: absolute;
+  top: 100px;
+ }
+
+footer{
+  bottom: 0px;
+  color: #fff;
+  width: 100%;
+  height: 150px;
+  background: #111315 0% 0% no-repeat padding-box;
+}
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 3vh;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+}
+
+.footer-logo{
+  width: 5%;
+  float: left;
+  margin-right: 10vw;
+}
+
+.eu-logo{
+  width: 15%;
+}
+
+.footer-tekst{
+  list-style: none;
+  line-height: 23px;
+  color: #fff;
+}
+/* kontak siden*/
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container > img {
+  width: 100px;
+  margin: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 15%;
+}
+.flex-container > p {
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.map {
+  width:100%;
+  height:100%;
+  margin-top: 5%;
+}
