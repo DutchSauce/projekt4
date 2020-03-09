@@ -13,8 +13,8 @@ html {
   background-size: cover;
 }
 
-.logo{
-  color: white;
+nav img{
+  width: 150px;
 }
 
 h4 {
@@ -282,4 +282,133 @@ footer{
 
 .footer-overskrift{
   padding-bottom: 1vh;
+}
+
+@media screen and (max-width: 767px) {
+  nav img{
+    width: 30%;
+    padding-left: ;
+  }
+
+  nav ul{
+     display: flex;
+     justify-content: space-around;
+     font-family: 'Josefin Sans', sans-serif;
+     width: auto;
+     font-size: 8px;
+  }
+
+
+   nav ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+  }
+
+  nav ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+   nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 8px;
+  }
+
+   nav ul li ul {
+     display: none;
+     position: absolute;
+     background-color: rgba(0, 0, 0, 1);
+     width: 150px;
+     height: 110px;
+     padding: 10px;
+     margin: -10px;
+     margin-top: 10px;
+     border-radius: 0px 0px 5px 5px;
+   }
+
+   nav ul li:hover ul {
+     display: block;
+
+   }
+
+   nav ul li ul li {
+     padding: 7px;
+
+   }
+
+   nav ul li ul li a {
+     padding: 8px 14px;
+   }
+
+   nav ul li ul li:hover {
+     background-color: #66432f
+   }
+
+   .headercontainer {
+      font-family: 'Josefin sans thin', sans-serif;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      top: 130px;
+    }
+
+    .headercontainer h2 {
+      font-size: 7vw;
+      top: 60px;
+    }
+
+    .headercontainer img{
+      display: none;
+    }
+
+.descriptions {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #444;
+}
+
+.descriptions1 {
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: #444;
+}
+
+.descriptionmid {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  max-width: 70%;
+  margin-top: 20%;
+}
+
+  footer{
+    display: none;
+  }
+
+  .footer-flex{
+    display: none;
+  }
+
 }

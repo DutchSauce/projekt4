@@ -26,7 +26,10 @@ nav{
   z-index: 1;
   position: fixed;
   width: 100%
+}
 
+nav img{
+  width: 150px;
 }
 
 nav ul{
@@ -286,4 +289,113 @@ footer{
 
 .footer-overskrift{
   padding-bottom: 1vh;
+}
+
+@media screen and (max-width: 767px) {
+  nav img{
+    width: 30%;
+  }
+
+  nav ul{
+     display: flex;
+     justify-content: space-around;
+     font-family: 'Josefin Sans', sans-serif;
+     width: auto;
+     font-size: 8px;
+  }
+
+
+   nav ul li{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    padding: 2px;
+  }
+
+  nav ul li:hover{
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+   nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 8px;
+  }
+
+   nav ul li ul {
+     display: none;
+     position: absolute;
+     background-color: rgba(0, 0, 0, 1);
+     width: 150px;
+     height: 110px;
+     padding: 10px;
+     margin: -10px;
+     margin-top: 10px;
+     border-radius: 0px 0px 5px 5px;
+   }
+
+   nav ul li:hover ul {
+     display: block;
+
+   }
+
+   nav ul li ul li {
+     padding: 7px;
+
+   }
+
+   nav ul li ul li a {
+     padding: 8px 14px;
+   }
+
+   nav ul li ul li:hover {
+     background-color: #66432f
+   }
+
+   .slideshow-container, .prev, .next{
+     display: none;
+   }
+
+   .produkt-h3{
+     top: 60%;
+     position: absolute;
+     margin: auto;
+     margin-left: 30px;
+     align-items: center;
+   }
+
+   .odense-h3{
+     top: 60%;
+     position: absolute;
+     margin: auto;
+     align-items: center;
+
+   }
+
+   .book-h3{
+     top: 75%;
+     position: absolute;
+     margin: auto;
+     align-items: center;
+   }
+
+   .foredrag, .img-svend{
+     width: 100%;
+     height: auto;
+     margin-left: auto;
+     position: absolute;
+   }
+
+   .odense-born, .booking, .forside-produkt{
+     height: 667px;
+   }
+
+  footer{
+    display: none;
+  }
+
+  .footer-flex{
+    display: none;
+  }
+
 }
