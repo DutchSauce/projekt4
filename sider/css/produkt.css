@@ -6,7 +6,7 @@
 
 
 html {
-  background: url(../billeder/baggrund.png) no-repeat center center fixed;
+  background: url(/billeder/baggrund.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -126,7 +126,6 @@ section {
 
 .wrapper {
   position: relative;
-  background: #fcf0f0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1em;
@@ -219,7 +218,7 @@ transition-duration: 2s;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 54px;
-  color: #b7b7b7;
+  color: #444;
 }
 
 .descriptionmid {
